@@ -11,6 +11,9 @@ let getUserRepos = function (user) {
         alert("Error: Github User Not Found")
     }
   })
+  .catch(function(error) {
+    alert("Unable to connect to Github");
+  })
 };
 
 const userFormEl = document.querySelector("#user-form");
